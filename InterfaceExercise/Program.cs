@@ -51,7 +51,39 @@ namespace InterfaceExercise
             suv.Name = "Subaru";
 
             car.Wheels = 4;
+            car.IsElectric = true;
 
+            truck.BedSize = 6;
+            truck.IsDesiel = true;
+
+            string input = "";
+
+            while(input != "exit")
+			{
+                Console.WriteLine("What car do you want? Type \"exit\" to exit");
+                input = Console.ReadLine().ToLower();
+                CarLot.numberOfCars++;
+                if(input == "car")
+				{
+                    Console.WriteLine(firstCar);
+                    Console.WriteLine(CarLot.numberOfCars);
+                    Console.WriteLine("What else?");
+                    input = Console.ReadLine();
+                }
+                else if (input == "truck")
+				{
+                    Console.WriteLine(firstCar);
+                    Console.WriteLine(CarLot.numberOfCars);
+                    Console.WriteLine("What else?");
+                    input = Console.ReadLine();
+
+                }
+                else
+				{
+                    Console.WriteLine("I don't know what that is.");
+                    input = Console.ReadLine();
+				}
+			}
         }
     }
 }
