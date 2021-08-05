@@ -68,14 +68,14 @@ namespace InterfaceExercise
                     Console.WriteLine(firstCar);
                     Console.WriteLine(CarLot.numberOfCars);
                     Console.WriteLine("What else?");
-                    input = Console.ReadLine();
+                    input = Console.ReadLine().ToLower();
                 }
                 else if (input == "truck")
 				{
                     Console.WriteLine(firstCar);
                     Console.WriteLine(CarLot.numberOfCars);
                     Console.WriteLine("What else?");
-                    input = Console.ReadLine();
+                    input = Console.ReadLine().ToLower();
 
                 }
                 else
